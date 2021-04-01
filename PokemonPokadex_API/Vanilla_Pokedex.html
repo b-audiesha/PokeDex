@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Vanilla JS Pokedex</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="//db.onlinewebfonts.com/c/f4d1593471d222ddebd973210265762a?family=Pokemon" rel="stylesheet" type="text/css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+  <h1>Audi's Pokedex</h1>
+  <ul id="pokedex"></ul>
+</div>
+<div class="loader"></div>
+<script src="app.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script>
+  $(window).load(function() {
+    $('#loading').hide();
+  });
+</script>
+</body>
+<div id="loading">
+  <img id="loading-image" src="https://media.giphy.com/media/DRfu7BT8ZK1uo/giphy.gif" alt="Loading..." />
+</div>
+</html>
